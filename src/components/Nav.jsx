@@ -7,10 +7,10 @@ import { navLinks } from '../constants';
 
 const Nav = () => {
 	return (
-		<header className="padding-x py-8 w-full">
+		<header className="padding-x py-8 absolute z-10 w-full">
 			<nav className="flex justify-between items-center max-container">
 				<a href="">
-					<img src={headerLogo} alt="nike-imagee" height={29} width={130} />
+					<img className='m-0 w-[129px] h-[29px]' src={headerLogo} alt="nike-imagee" height={29} width={130} />
 				</a>
 				<ul className="flex flex-1 justify-center items-center gap-16 max-md:hidden">
 					{navLinks.map((item) => (
